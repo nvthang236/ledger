@@ -1,0 +1,70 @@
+asset:
+  total: 2000
+  Deposit:
+    total: 1000
+    dr: 1000
+    cr: 0
+    accounts:
+      - date: 2015/01/01
+        desc: Start the business
+        cor: Capital
+        ref: '1'
+        dr: 1000
+  Accounts receivable:
+    total: 1000
+    dr: 1000
+    cr: 0
+    accounts:
+      - date: 2015/01/31
+        desc: Did job
+        cor: Sales
+        ref: '2'
+        dr: 1000
+expense:
+  total: 50
+  Communications:
+    total: 50
+    dr: 50
+    cr: 0
+    accounts:
+      - date: 2015/02/28
+        desc: Internet Service Provider fee
+        cor: Accounts payable
+        ref: '3'
+        dr: 50
+liability:
+  total: 50
+  Accounts payable:
+    total: 50
+    cr: 50
+    dr: 0
+    accounts:
+      - date: 2015/02/28
+        desc: Internet Service Provider fee
+        cor: Communications
+        ref: '3'
+        cr: 50
+equity:
+  total: 1000
+  Capital:
+    total: 1000
+    cr: 1000
+    dr: 0
+    accounts:
+      - date: 2015/01/01
+        desc: Start the business
+        cor: Deposit
+        ref: '1'
+        cr: 1000
+revenue:
+  total: 1000
+  Sales:
+    total: 1000
+    cr: 1000
+    dr: 0
+    accounts:
+      - date: 2015/01/31
+        desc: Did job
+        cor: Accounts receivable
+        ref: '2'
+        cr: 1000
