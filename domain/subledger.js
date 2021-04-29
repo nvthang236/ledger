@@ -26,7 +26,7 @@ class Subledger {
    */
   total() {
     if (this.side() === DEBIT) {
-      // If the account type is debit type (i.e. Asset or Revenue)
+      // If the account type is debit type (i.e. Asset or Expense)
       // the debit is positive amount and the credit is negative amount.
       return new Money(this.totalDebit().amount - this.totalCredit().amount)
     } else {

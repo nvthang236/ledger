@@ -42,5 +42,3 @@ ledgerRepository.saveAsYamlToPath(ledger, `${__dirname}/ledger.yml`);
 
 const balanceSheetRepository = new BalanceSheet.Repository();
 balanceSheetRepository.saveYamlToPath(balanceSheet, `${__dirname}/bs.yml`);
-
-console.log();

@@ -43,11 +43,9 @@ class BalanceSheetRepository {
       const retainedEarnings = balanceSheet.retainedEarnings().amount
 
       subObj['Retained earnings'] = retainedEarnings
-      subObj.total =
-        balanceSheet.totalByMajorType(majorType).amount + retainedEarnings
-    } else {
-      subObj.total = balanceSheet.totalByMajorType(majorType).amount
     }
+
+    subObj.total = balanceSheet.totalByMajorType(majorType).amount
   }
 
   /**
